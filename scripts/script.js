@@ -6,8 +6,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 const api_key = "at_R0yCGoPqeTtllJ2OZYQQ1vZmxvDrV";
- 
-
   
 const bttn = document.querySelector('#myButton');
 bttn.addEventListener("click", () => {
