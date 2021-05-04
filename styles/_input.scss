@@ -1,0 +1,46 @@
+.input-wrapper{
+    width: 280px;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-button{
+    background-color: black;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 50px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s background-color ease-out;
+    cursor: pointer;
+    &:hover{
+        background-color: $Very-Dark-Grey;
+    }
+}
+.my-input{
+    background-color: white;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 50px;
+    border-radius: 20px 0 0 20px;
+}
+@media screen and (min-width: 1200px) {
+    .input-wrapper{
+        width: 600px;
+        margin-top: 5vh;
+    }
+    .my-button{
+        width: 60px;
+    }
+
+}

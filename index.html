@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="flex-center">
+<div class="top-div">
+
+  <h1>IP Address Tracker</h1>
+
+  <div class="input-wrapper">
+      <input id="myInput" class="my-input" type="text" placeholder="Search for any IP Address or domain">
+      <button id="myButton" class="my-button"><img src="./images/icon-arrow.svg" alt="arrow"></button>
+  </div>
+
+  <div class="info-table">
+    <div id="ip" class="ip flex-center">
+      <h2>IP ADDRESS:</h2>
+      <p id="ipRes"></p>
+    </div>
+    <div id="location" class="location flex-center">
+      <h2>LOCATION:</h2>
+      <p id="locationRes"></p>
+    </div>
+    <div id="timezone" class="timezone flex-center">
+      <h2>TIMEZONE:</h2>
+      <p id="timezoneRes"></p>
+        <!-- add offset value dynamically using the API -->
+    </div>
+    <div id="isp" class="isp flex-center">
+      <h2>ISP:</h2>
+      <p id="ispRes"></p>
+    </div>
+  </div>
+</div>
+</div>
+  
+  <div id="map" class="map"></div>
+<!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Wojtek Przerywacz</a>.
+  </div>
+-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="../scripts/script.js"></script>
+</body>
+</html>

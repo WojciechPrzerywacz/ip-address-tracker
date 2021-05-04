@@ -1,0 +1,55 @@
+$Very-Dark-Grey: hsl(0, 0%, 17%);
+$Dark-Grey: hsl(0, 0%, 59%);
+@import "globals";
+@import "ipinfotable";
+
+@import "input";
+
+.top-div{
+    height: 40vh;
+    width: 100%;
+    background-image: url(../images/pattern-bg.png);
+    background-size: none 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+    .top-div{
+        background-size: 100% 100%;
+    }
+    .ip{
+        margin-left: 20px;
+        width: 25%;
+        height: 10vh;
+        align-items: flex-start;
+        border-right: 1px solid $Dark-Grey;
+    }
+    .location{
+        margin-left: 20px;
+        width: 25%;
+        height: 10vh;
+        align-items: flex-start;
+        border-right: 1px solid $Dark-Grey;
+    }
+    .timezone{
+        margin-left: 20px;
+        width: 25%;
+        height: 10vh;
+        align-items: flex-start;
+        border-right: 1px solid $Dark-Grey;
+    }
+    .isp{
+        margin-left: 20px;
+        width: 25%;
+        height: 10vh;
+        align-items: flex-start;
+    }
+}
+
+
+.map{
+    height: 85vh;
+    z-index: 0;
+}

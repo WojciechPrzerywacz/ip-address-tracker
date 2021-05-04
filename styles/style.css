@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: #969696;
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+  font-size: 22px;
+  color: #2b2b2b;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    margin-top: 5vh;
+  }
+}
+
+.info-table {
+  width: 280px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .info-table {
+    margin-top: 10vh;
+    width: 1000px;
+    min-height: 150px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.input-wrapper {
+  width: 280px;
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-button {
+  background-color: black;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  height: 50px;
+  border-radius: 0 20px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s background-color ease-out;
+  transition: .5s background-color ease-out;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: #2b2b2b;
+}
+
+.my-input {
+  background-color: white;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  height: 50px;
+  border-radius: 20px 0 0 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .input-wrapper {
+    width: 600px;
+    margin-top: 5vh;
+  }
+  .my-button {
+    width: 60px;
+  }
+}
+
+.top-div {
+  height: 40vh;
+  width: 100%;
+  background-image: url(../images/pattern-bg.png);
+  background-size: none 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .top-div {
+    background-size: 100% 100%;
+  }
+  .ip {
+    margin-left: 20px;
+    width: 25%;
+    height: 10vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border-right: 1px solid #969696;
+  }
+  .location {
+    margin-left: 20px;
+    width: 25%;
+    height: 10vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border-right: 1px solid #969696;
+  }
+  .timezone {
+    margin-left: 20px;
+    width: 25%;
+    height: 10vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border-right: 1px solid #969696;
+  }
+  .isp {
+    margin-left: 20px;
+    width: 25%;
+    height: 10vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.map {
+  height: 85vh;
+  z-index: 0;
+}
+/*# sourceMappingURL=style.css.map */
